@@ -1,0 +1,12 @@
+{
+  "name": "beekeeper-task-manager",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.5.2",
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "lint": "pnpm --filter web lint",
+    "test": "pnpm lint && pnpm --filter web test"
+  }
+}
