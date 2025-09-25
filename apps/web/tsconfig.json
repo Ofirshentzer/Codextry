@@ -1,0 +1,17 @@
+{
+  "extends": "../../packages/config/tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/lib/*": ["./src/lib/*"],
+      "@/app/*": ["./src/app/*"],
+      "@beekeeper/domain": ["../../packages/domain/src"],
+      "@beekeeper/storage": ["../../packages/storage/src"]
+    },
+    "allowJs": false,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["next-env.d.ts", "src/**/*", "vitest.setup.ts"],
+  "exclude": ["node_modules"]
+}
